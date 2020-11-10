@@ -3,24 +3,15 @@
 	  "headers": {
 	    "/*": {
 	      "X-Author":"eaccounted",
-	      "Access-Control-Allow-Origin": "*"
+	      "Access-Control-Allow-Origin": "*",
+	      "Content-Type":"text/plain;charset=UTF-8",
 	    },
 	    
-	    "/login/": {
-	      "Content-Type":"text/plain;charset=UTF-8",
+	    "/*/*": {
+	     
 	      "Access-Control-Allow-Origin": "*"
-	    },
-	    "/sample/": {
-	     "Content-Type": "text/plain; charset=UTF-8",
-	      "Access-Control-Allow-Origin": "*"
-	    },
-            "/promise/": {
-              "Content-Type": "text/plain; charset=UTF-8",
-              "Access-Control-Allow-Origin": "*"
-            },
-            "/fetch/": {
-             "Content-Type": "text/html; charset=utf-8",
-              "Access-Control-Allow-Origin": "*"
+	   
+	   
       
             }
 	  }
