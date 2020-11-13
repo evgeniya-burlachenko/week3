@@ -9,9 +9,24 @@
 	<input type="text" id="inp">
 	<button id="bt">button</button>
 	<script>
-		let button = document.getElementById("bt").addEventListener("click",()=>{
-		let input =  document.getElementById("inp");
-		};
+		
+			 const input = document.getElementById("bt")  
+			         .addEventListener('click', fetch_req);               
+			          function fetch_req(){           
+			           const url=document.getElementById('inp').value;        
+			                        
+			                fetch(url)               
+			                 .then((response) => {                   
+			                  return response.text();               
+			                   })               
+			                    .then((data) => {                   
+			                     console.log(data);                    
+			                     document.querySelector('input').value = data;               
+			                      })                
+			                      .catch(reject => {                    
+			                      console.log(reject);               
+			                       });       
+			                        }  
 		
 	</script>	
 </body>
